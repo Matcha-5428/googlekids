@@ -12,16 +12,14 @@ if (window.navigator.onLine) {
     console.log(internet)
   }
 
-function butotnClick(){
-    //alert('Click');
-    const textbox = document.getElementById("message");
-    const value = textbox.value
-    console.log(value)
-    let serach = "https://kids.yahoo.co.jp/yomigana?p=" + value + "&ykvrank1=&ykvdesturl=https%3A%2F%2Fkids.yahoo.co.jp%2Fsearch"
-    console.log(serach)
+document.getElementById("sample").addEventListener("click", function () {
+  location.replace("https://techacademy.jp/");
+  const textbox = document.getElementById("message");
+  const value = textbox.value;
+  console.log(value);
+  let serach = "https://kids.yahoo.co.jp/yomigana?p=" + value + "&ykvrank1=&ykvdesturl=https%3A%2F%2Fkids.yahoo.co.jp%2Fsearch";
+  console.log(serach)
 
-    window.location.href = serach;
-}
+  window.location.href = serach;
+}, false);
 
-let button = document.getElementById('btn');
-button.addEventListener('click', butotnClick);
