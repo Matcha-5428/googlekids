@@ -13,7 +13,6 @@ if (window.navigator.onLine) {
   }
 
 document.getElementById("sample").addEventListener("click", function () {
-  location.replace("https://techacademy.jp/");
   const textbox = document.getElementById("message");
   const value = textbox.value;
   console.log(value);
@@ -21,5 +20,10 @@ document.getElementById("sample").addEventListener("click", function () {
   console.log(serach)
 
   window.location.href = serach;
+}, false);
+
+document.getElementById("version").addEventListener("click", function () {
+  alert("Version:Alha 1,0,2")
+
 }, false);
 
